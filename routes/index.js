@@ -1,25 +1,40 @@
+"use strict";
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+var nodemailer = require('nodemailer');
+var transporter = nodemailer.createTransport({
+    service: 'Yandex',
+    auth: {
+        user: 'ciklevka-parketa-spb@yandex.ru',
+        pass: 'U4E31#RHw9'
+    }
+});
+
 router.get('/', function (req, res, next){
     res.render('index');
 });
 
-router.get('/parquet', function (req, res, next){
-    res.render('parquet');
-});
-router.get('/parquet-white', function (req, res, next){
-    res.render('parquet-white');
-});
-router.get('/parquet-gray', function (req, res, next){
-    res.render('parquet-gray');
-});
-router.get('/parquet-orange', function (req, res, next){
-    res.render('parquet-orange');
-});
-router.get('/parquet-burlywood', function (req, res, next){
-    res.render('parquet-burlywood');
+router.post('/mail', function (req, res, next){
+    let name = req.body.name,
+        email = req.body.email,
+        tel = req.body.tel,
+        comment = req.body.comment,
+        text;
+    text = `Имя: ${name}
+        Email: ${email || 'не указан'}
+            Телефон: ${tel}
+                Комментарий: ${comment}`;
+    transporter.sendMail({
+        from: 'ciklevka-parketa-spb@yandex.ru',
+        to: 'ciklevka-parketa-spb@yandex.ru',
+        subject: `Заявка с сайта: ${req.hostname}`,
+        text: text
+    }, function (err){
+        console.log(err);
+        if (err) return next(err);
+        res.end();
+    });
 });
 
 module.exports = router;
