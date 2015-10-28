@@ -4,8 +4,8 @@
 /**
 ** Fonts
 */
-@import url(../font/garden.css);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:700&subset=cyrillic,latin);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 /**
 ** css
 */
@@ -25,7 +25,7 @@ nav {
     height: 75px;
     background-position: center center; }
   nav .media-heading {
-    font-family: 'GardensC';
+    font-family: 'PT Sans';
     font-weight: bold; }
 
 section {
@@ -58,9 +58,9 @@ nav .media-body h4 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 19rem 0;
+  padding: 17rem 0;
   margin-bottom: 50px;
-  font-family: 'GardensC';
+  font-family: 'PT Sans';
   color: #000; }
   #intro button {
     color: white;
@@ -70,15 +70,14 @@ nav .media-body h4 {
       background: #0CF; }
   #intro h1 {
     padding-bottom: 0;
-    font-size: 3rem;
-    text-shadow: 1px 1px 1rem rgba(221, 221, 221, 0.7), 0 0 3rem #A87D52; }
+    font-size: 3rem; }
   #intro p {
-    font-size: 2rem;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px rgba(221, 221, 221, 0.7), 0 0 3rem #A87D52; }
+    font-size: 2rem; }
 
 .gray {
-  background: rgba(0, 0, 0, 0.5); }
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+  color: white; }
 
 .icon-delivery, .icon-mounting, .icon-payment, .icon-guarantee, .icon-insurance {
   height: 135px;

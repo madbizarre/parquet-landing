@@ -38,10 +38,8 @@
 /**
 ** Fonts
 */
-
-@import url(../font/garden.css); //'GardensC';
-//@import "http://webfonts.ru/import/azoft.css"; //'Azoft Sans';
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600); //'Open Sans'
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:700&subset=cyrillic,latin); //font-family: 'PT Sans', sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600); //'Open Sans'
 
 /**
 ** css
@@ -67,7 +65,7 @@ nav {
     background-position: center center;
   }
   .media-heading {
-    font-family: 'GardensC';
+    font-family: 'PT Sans';
     font-weight: bold;
   }
 }
@@ -108,9 +106,9 @@ nav {
 #intro {
   background: url("../img/intro.jpg") no-repeat center center;
   @include background-size(cover);
-  padding: 19rem 0;
+  padding: 17rem 0;
   margin-bottom: 50px;
-  font-family: 'GardensC';
+  font-family: 'PT Sans';
   color: #000;
   button {
     color: white;
@@ -123,17 +121,17 @@ nav {
   h1 {
     padding-bottom: 0;
     font-size: 3rem;
-    text-shadow: 1px 1px 1rem rgba(221, 221, 221, 0.7), 0 0 3rem #A87D52;
   }
   p {
     font-size: 2rem;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px rgba(221, 221, 221, 0.7), 0 0 3rem #A87D52;
+    //font-weight: bold;
   }
 }
 
 .gray {
   background: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+  color: white;
 }
 
 .icon-delivery, .icon-mounting, .icon-payment, .icon-guarantee, .icon-insurance {
