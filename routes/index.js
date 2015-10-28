@@ -26,12 +26,11 @@ router.post('/mail', function (req, res, next){
             Телефон: ${tel}
                 Комментарий: ${comment}`;
     transporter.sendMail({
-        from: 'ciklevka-parketa-spb@yandex.ru',
+        from: 'Циклевка Паркета СПб <ciklevka-parketa-spb@yandex.ru>',
         to: 'ciklevka-parketa-spb@yandex.ru',
         subject: `Заявка с сайта: ${req.hostname}`,
         text: text
     }, function (err){
-        console.log(err);
         if (err) return next(err);
         res.end();
     });

@@ -1,0 +1,246 @@
+/**
+**  mixins
+*/
+/**
+** Fonts
+*/
+@import url(../font/garden.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+/**
+** css
+*/
+body {
+  background: burlywood;
+  padding: 0; }
+
+body.modal-open {
+  padding-right: 0px !important; }
+
+main {
+  text-align: center; }
+
+nav {
+  background: white; }
+  nav img {
+    height: 75px;
+    background-position: center center; }
+  nav .media-heading {
+    font-family: 'GardensC';
+    font-weight: bold; }
+
+section {
+  padding-top: 6rem;
+  font-family: 'Open Sans'; }
+  section h1 {
+    padding-bottom: 50px; }
+
+footer {
+  font-family: 'Open Sans'; }
+
+.nav-link {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: black;
+  margin-top: 14px; }
+
+nav .media-body h4 {
+  margin-top: 20px; }
+
+.logo {
+  height: 75px;
+  width: 75px;
+  background: url("../img/logo2.jpg") no-repeat center center;
+  background-size: cover; }
+
+#intro {
+  background: url("../img/intro.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 19rem 0;
+  margin-bottom: 50px;
+  font-family: 'GardensC';
+  color: #000; }
+  #intro button {
+    color: white;
+    opacity: 1;
+    border-color: #00688C; }
+    #intro button:hover {
+      background: #0CF; }
+  #intro h1 {
+    padding-bottom: 0;
+    font-size: 3rem; }
+  #intro p {
+    font-size: 2rem;
+    font-weight: bold; }
+
+.gray {
+  background: rgba(0, 0, 0, 0.5); }
+
+.icon-delivery, .icon-mounting, .icon-payment, .icon-guarantee, .icon-insurance {
+  height: 135px;
+  padding-top: 135px;
+  width: 150px;
+  margin-bottom: 100px; }
+
+.icon-delivery {
+  background: url("../img/promo.png") no-repeat 50% 0; }
+
+.icon-mounting {
+  background: url("../img/promo.png") no-repeat 50% -135px; }
+
+.icon-payment {
+  background: url("../img/promo.png") no-repeat 50% -270px; }
+
+.icon-guarantee {
+  background: url("../img/promo.png") no-repeat 50% -410px; }
+
+.icon-insurance {
+  background: url("../img/promo.png") no-repeat 50% -542px; }
+
+.icon-broshirovanie, .icon-remont, .icon-shlifovka, .icon-laminat, .icon-parket, .icon-lakirovka {
+  width: 300px;
+  height: 200px;
+  padding-top: 200px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px; }
+
+.icon-broshirovanie {
+  background: url("../img/service.png") no-repeat 50% 0; }
+
+.icon-parket {
+  background: url("../img/service.png") no-repeat 50% -1000px; }
+
+.icon-remont {
+  background: url("../img/service.png") no-repeat 50% -400px; }
+
+.icon-shlifovka {
+  background: url("../img/service.png") no-repeat 50% -600px; }
+
+.icon-laminat {
+  background: url("../img/service.png") no-repeat 50% -800px; }
+
+.icon-lakirovka {
+  background: url("../img/service.png") no-repeat 50% -200px; }
+
+#ciclevka p {
+  text-align: left; }
+#ciclevka span {
+  font-weight: bold; }
+
+.definition {
+  color: cornflowerblue;
+  font-weight: bold; }
+
+#ciclevka-price {
+  color: black; }
+  #ciclevka-price table {
+    text-align: left; }
+
+#reviews img {
+  width: 150px;
+  float: left; }
+#reviews span {
+  text-align: left; }
+#reviews p {
+  text-align: left; }
+
+.modal-form {
+  text-align: left; }
+
+.modal-content {
+  background-color: #f9f9f9; }
+
+#contactUsModal, #consultation {
+  margin-top: calc(200px / 4); }
+  #contactUsModal .contact-title, #consultation .contact-title {
+    color: #F96;
+    display: block;
+    font-size: 30px;
+    font-weight: 400; }
+  #contactUsModal .modal-body *, #consultation .modal-body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility; }
+  #contactUsModal .contact, #consultation .contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 0; }
+    #contactUsModal .contact .alert, #consultation .contact .alert {
+      margin-bottom: 10px; }
+    #contactUsModal .contact input[type="text"], #contactUsModal .contact input[type="email"], #contactUsModal .contact input[type="tel"], #contactUsModal .contact input[type="url"], #contactUsModal .contact textarea, #contactUsModal .contact button[type="submit"], #consultation .contact input[type="text"], #consultation .contact input[type="email"], #consultation .contact input[type="tel"], #consultation .contact input[type="url"], #consultation .contact textarea, #consultation .contact button[type="submit"] {
+      font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+    #contactUsModal .contact h4, #consultation .contact h4 {
+      margin-bottom: 15px;
+      display: block;
+      font-size: 13px; }
+    #contactUsModal .contact fieldset, #consultation .contact fieldset {
+      border: medium none !important;
+      margin: 0 0 10px;
+      min-width: 100%;
+      padding: 0;
+      width: 100%; }
+    #contactUsModal .contact input[type="text"], #contactUsModal .contact input[type="email"], #contactUsModal .contact input[type="tel"], #contactUsModal .contact input[type="url"], #contactUsModal .contact textarea, #consultation .contact input[type="text"], #consultation .contact input[type="email"], #consultation .contact input[type="tel"], #consultation .contact input[type="url"], #consultation .contact textarea {
+      width: 100%;
+      border: 1px solid #CCC;
+      background: #FFF;
+      margin: 0 0 5px;
+      padding: 10px; }
+    #contactUsModal .contact input[type="text"]:hover, #contactUsModal .contact input[type="email"]:hover, #contactUsModal .contact input[type="tel"]:hover, #contactUsModal .contact input[type="url"]:hover, #contactUsModal .contact textarea:hover, #consultation .contact input[type="text"]:hover, #consultation .contact input[type="email"]:hover, #consultation .contact input[type="tel"]:hover, #consultation .contact input[type="url"]:hover, #consultation .contact textarea:hover {
+      -webkit-transition: border-color 0.3s ease-in-out;
+      -moz-transition: border-color 0.3s ease-in-out;
+      transition: border-color 0.3s ease-in-out;
+      border: 1px solid #AAA; }
+    #contactUsModal .contact textarea, #consultation .contact textarea {
+      height: 100px;
+      max-width: 100%;
+      resize: none; }
+    #contactUsModal .contact button[type="submit"], #consultation .contact button[type="submit"] {
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      background: #0CF;
+      color: #FFF;
+      margin: 0 0 5px;
+      padding: 10px;
+      font-size: 15px; }
+      #contactUsModal .contact button[type="submit"]:hover, #consultation .contact button[type="submit"]:hover {
+        background: #09C;
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out; }
+      #contactUsModal .contact button[type="submit"]:active, #consultation .contact button[type="submit"]:active {
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+    #contactUsModal .contact input:focus, #contactUsModal .contact textarea:focus, #consultation .contact input:focus, #consultation .contact textarea:focus {
+      outline: 0;
+      border: 1px solid #999; }
+    #contactUsModal .contact ::-webkit-input-placeholder, #consultation .contact ::-webkit-input-placeholder {
+      color: #888; }
+    #contactUsModal .contact :-moz-placeholder, #consultation .contact :-moz-placeholder {
+      color: #888; }
+    #contactUsModal .contact ::-moz-placeholder, #consultation .contact ::-moz-placeholder {
+      color: #888; }
+    #contactUsModal .contact :-ms-input-placeholder, #consultation .contact :-ms-input-placeholder {
+      color: #888; }
+  #contactUsModal .contact-container, #consultation .contact-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative; }
+    #contactUsModal .contact-container .alert, #consultation .contact-container .alert {
+      padding: 15px; }
+
+#consultation {
+  margin-top: 0px; }
+
+/*# sourceMappingURL=main.css.map */

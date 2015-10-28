@@ -2,10 +2,15 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Циклевка Паркета СПб</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/parquet.css"/>
+    <link rel="stylesheet" href="css/main.min.css"/>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <nav class="navbar navbar-light bg-faded navbar-fixed-top" role="navigation">
     <!-- Toggle Button -->
@@ -15,14 +20,14 @@
             ☰ Меню
         </button>
         <div class="collapse navbar-toggleable-sm" id="nav-content">
-                <div class="media col-lg-3">
-                    <a class="media-left media-middle" href="#intro">
-                        <img class="media-object" src="img/logo.jpg" alt="">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">Циклевка паркета СПб</h4>
-                    </div>
+            <div class="media col-lg-4 ">
+                <a class="media-left media-middle hidden-sm-down" href="#intro">
+                    <img class="media-object" src="img/logo2.jpg" alt="">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Циклевка паркета СПб</h4>
                 </div>
+            </div>
             <ul class="nav nav-pills">
                 <li class="nav-item hidden-sm-down">
                     <a class="nav-link" href="#promo">Преимущества</a>
@@ -36,12 +41,6 @@
                 <li class="nav-item hidden-sm-down">
                     <a class="nav-link" href="#consultation">Консультация</a>
                 </li>
-                <!--<li class="nav-item hidden-sm-down">
-                    <a class="nav-link" href="#">Как мы работаем?</a>
-                </li>-->
-                <li class="nav-item hidden-sm-down">
-                    <a class="nav-link" href="#reviews">Отзывы</a>
-                </li>
                 <li class="nav-item hidden-md-up col-sm-12 col-md-6">
                     <a class="nav-link" href="#promo">Преимущества</a>
                 </li>
@@ -54,12 +53,6 @@
                 <li class="nav-item hidden-md-up col-sm-12 col-md-6">
                     <a class="nav-link" href="#consultation">Консультация</a>
                 </li>
-                <!--<li class="nav-item hidden-md-up col-sm-12 col-md-6">
-                    <a class="nav-link" href="#">Как мы работаем?</a>
-                </li>-->
-                <li class="nav-item hidden-md-up col-sm-12 col-md-6">
-                    <a class="nav-link" href="#reviews">Отзывы</a>
-                </li>
                 <li class="nav-item hidden-md-up col-sm-12 col-md-12">
                     <a class="nav-link" href="#intro">Наверх</a>
                 </li>
@@ -67,17 +60,14 @@
         </div>
     </div>
 </nav>
-
 <main role="main">
     <section id="intro">
         <div class="container">
             <h1>Циклевка Паркета СПб</h1>
-
             <p>г. Санкт-Петербург, Московское шоссе д.16 к 1.<br/>
                 режим работы: с 9.00 до 22.00<br/>
                 телефон: +7(812) 715-80-97</p>
-            <button type="button" class="btn btn-primary-outline btn-lg" data-toggle="modal"
-                    data-target="#contactUsModal">
+            <button type="button" class="btn btn-primary-outline btn-lg" data-toggle="modal" data-target="#contactUsModal">
                 Оставить заявку
             </button>
         </div>
@@ -105,7 +95,6 @@
     </section>
     <section class="container" id="ciclevka">
         <h1>Что такое циклевка?</h1>
-
         <p><span>Циклевка паркета и циклевка полов</span> в СПб является одним из важных подготовительных этапов работ с
             дощатыми полами, паркетными полами и половыми досками. <br/>
             <span>Пол</span> – это покрытие, настил, на котором осуществляется жизнедеятельность людей или протекают
@@ -120,9 +109,8 @@
             удовольствие. Именно поэтому мы предлагаем более дешевую услугу укладка ламината.<br/>
         </p>
     </section>
-    <section class="container" id="ciclevka-price" style="color: black">
+    <section class="container" id="ciclevka-price">
         <h1>Цены на циклевку паркета (циклевку пола)</h1>
-
         <div class="table-responsive">
             <table class="table">
                 <tr>
@@ -169,9 +157,8 @@
     </section>
     <section class="container" id="consultation">
         <h1>Оставьте заявку</h1>
-
         <div class="contact-container">
-            <form class="contact" action="" method="post">
+            <form class="contact" action="" method="post" id="contact">
                 <h4>Заполните форму, и мы ответим Вам в течении 24 часов!</h4>
                 <fieldset>
                     <input type="text" placeholder="Ваше имя*" id="inputName" tabindex="1" required/>
@@ -194,7 +181,7 @@
             </form>
         </div>
     </section>
-    <section class="container" id="reviews">
+    <!--<section class="container" id="reviews">
         <h1>Отзывы наших клиентов:</h1>
         <ul class="list-inline">
             <li class="col-lg-6">
@@ -249,7 +236,7 @@
                 </div>
             </li>
         </ul>
-    </section>
+    </section>-->
     <div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
          aria-hidden="true">
         <div class="modal-dialog modal-md" role="document">
@@ -263,21 +250,21 @@
                 </div>
                 <div class="modal-body">
                     <div class="contact-container">
-                        <form class="contact" action="" method="post">
+                        <form class="contact" action="" method="post" id="modalContact">
                             <h4>Заполните форму, и мы ответим Вам в течении 24 часов!</h4>
                             <fieldset>
-                                <input type="text" placeholder="Ваше имя*" id="inputName" tabindex="1" autofocus
+                                <input type="text" placeholder="Ваше имя*" id="inputName2" tabindex="1" autofocus
                                        required/>
                             </fieldset>
                             <fieldset>
-                                <input type="email" placeholder="Ваш Email адрес" id="inputEmail" tabindex="2"/>
+                                <input type="email" placeholder="Ваш Email адрес" id="inputEmail2" tabindex="2"/>
                             </fieldset>
                             <fieldset>
-                                <input type="tel" placeholder="Ваш телефон*" id="inputTel" tabindex="3"
+                                <input type="tel" placeholder="Ваш телефон*" id="inputTel2" tabindex="3"
                                        pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required/>
                             </fieldset>
                             <fieldset>
-                                <textarea placeholder="Сообщение*" tabindex="5" id="inputComment" required></textarea>
+                                <textarea placeholder="Сообщение*" tabindex="5" id="inputComment2" required></textarea>
                             </fieldset>
                             <fieldset>
                                 <button name="submit" type="submit" id="contact-submit">
@@ -295,10 +282,9 @@
 <footer class="container" role="contentinfo">
     <hr/>
     <p>© Циклевка Паркета СПб <%= new Date().getFullYear() %></p>
-
     <p>режим работы: с 9.00 до 22.00<br/>
         телефон: +7(812) 715-80-97</p>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.min.js"></script>
