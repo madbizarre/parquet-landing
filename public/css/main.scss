@@ -13,7 +13,6 @@
 @mixin icon-background($url, $move-y, $move-x: 50%) {
   background: url($url) no-repeat $move-x $move-y;
 }
-
 @mixin transform($value) {
   transform: scale($value);
   -webkit-transform: scale($value);
