@@ -28,7 +28,7 @@ router.post('/mail', function (req, res, next){
     transporter.sendMail({
         from: 'Циклевка Паркета СПб <ciklevka-parketa-spb@yandex.ru>',
         to: 'ciklevka-parketa-spb@yandex.ru',
-        subject: `Заявка с сайта: ${req.hostname}`,
+        subject: `Заявка с сайта: циклевка-паркета.рф`,
         text: text
     }, function (err){
         if (err) return next(err);
