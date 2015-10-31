@@ -94,7 +94,7 @@ footer {
   color: black;
   table {
     text-align: left;
-    font-size: 1.75rem;
+    //font-size: 1.75rem;
   }
 }
 
@@ -234,4 +234,22 @@ footer {
 }
 #consultation {
   margin-top: 0px;
+}
+@media (max-width: 768px) {
+    .container, #service {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  section.container, footer.container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .intro {
+    padding: 0;
+  }
+  nav {
+    li {
+      padding: 0 15px;
+    }
+  }
 }

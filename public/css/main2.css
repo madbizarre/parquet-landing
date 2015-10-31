@@ -70,8 +70,7 @@ footer {
 #ciclevka-price {
   color: black; }
   #ciclevka-price table {
-    text-align: left;
-    font-size: 1.75rem; }
+    text-align: left; }
 
 .modal-form {
   text-align: left; }
@@ -171,5 +170,20 @@ footer {
 
 #consultation {
   margin-top: 0px; }
+
+@media (max-width: 768px) {
+  .container, #service {
+    padding-left: 0;
+    padding-right: 0; }
+
+  section.container, footer.container {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .intro {
+    padding: 0; }
+
+  nav li {
+    padding: 0 15px; } }
 
 /*# sourceMappingURL=main2.css.map */
