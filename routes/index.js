@@ -15,6 +15,10 @@ router.get('/', function (req, res, next){
     res.render('index');
 });
 
+router.get('/2', function (req, res, next){
+    res.render('index2');
+});
+
 router.post('/mail', function (req, res, next){
     let name = req.body.name,
         email = req.body.email,

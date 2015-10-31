@@ -191,6 +191,8 @@ nav .media-body h4 {
       min-width: 100%;
       padding: 0;
       width: 100%; }
+      #contactUsModal .contact fieldset label, #consultation .contact fieldset label {
+        display: none; }
     #contactUsModal .contact input[type="text"], #contactUsModal .contact input[type="email"], #contactUsModal .contact input[type="tel"], #contactUsModal .contact input[type="url"], #contactUsModal .contact textarea, #consultation .contact input[type="text"], #consultation .contact input[type="email"], #consultation .contact input[type="tel"], #consultation .contact input[type="url"], #consultation .contact textarea {
       width: 100%;
       border: 1px solid #CCC;
