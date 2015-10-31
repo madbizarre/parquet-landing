@@ -1,25 +1,3 @@
-@charset "UTF-8";
-
-/**
-**  mixins
-*/
-
-@mixin border-radius($values) {
-  -webkit-border-radius: $values;
-  -moz-border-radius: $values;
-  border-radius: $values;
-}
-
-@mixin icon-background($url, $move-y, $move-x: 50%) {
-  background: url($url) no-repeat $move-x $move-y;
-}
-@mixin transform($value) {
-  transform: scale($value);
-  -webkit-transform: scale($value);
-  -o-transform: scale($value);
-  -moz-transform: scale($value);
-}
-
 @mixin background-size($value) {
   -webkit-background-size: $value;
   -moz-background-size: $value;
@@ -27,104 +5,33 @@
   background-size: $value;
 }
 
-@mixin box-shadow($value){
-  -webkit-box-shadow: $value;
-  -moz-box-shadow: $value;
-  -ms-box-shadow: $value;
-  -o-box-shadow: $value;
-  box-shadow: $value;
-}
-/**
-** Fonts
-*/
-
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:700&subset=cyrillic,latin); //font-family: 'PT Sans', sans-serif;
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600); //'Open Sans'
 
-/**
-** css
-*/
-
 body {
-  background: burlywood;
   padding: 0;
+  background-color: burlywood;
+  color: #000;
+  font-family: 'PT Sans';
 }
-
-body.modal-open {
-  padding-right: 0px !important;
-}
-
-main {
-  text-align: center;
-}
-
-nav {
-  background: white;
-  img {
-    height: 75px;
-    background-position: center center;
-  }
-  .media-heading {
-    font-family: 'PT Sans';
-    font-weight: bold;
-  }
-}
-
 section {
   padding-top: 6rem;
   font-family: 'Open Sans';
   h1 {
     padding-bottom: 50px;
   }
+  p {
+    font-size: 1.75rem;
+  }
+  span {
+    font-weight: bold;
+  }
 }
 
 footer {
   font-family: 'Open Sans';
-}
-
-.nav-link {
-  color: black;
-  text-decoration: underline;
-  text-decoration-color: black;
-  margin-top: 14px;
-}
-
-nav {
-  .media-body {
-    h4{
-      margin-top: 20px;
-    }
-  }
-}
-.logo {
-  height: 75px;
-  width: 75px;
-  background: url("../img/logo2.jpg") no-repeat center center;
-  background-size: cover;
-}
-
-#intro {
-  background: url("../img/intro.jpg") no-repeat center center;
-  @include background-size(cover);
-  padding: 17rem 0;
-  margin-bottom: 50px;
-  font-family: 'PT Sans';
-  color: #000;
-  button {
-    color: white;
-    opacity: 1;
-    border-color: #00688C;
-    &:hover {
-      background: #0CF;
-    }
-  }
-  h1 {
-    padding-bottom: 0;
-    font-size: 3rem;
-  }
-  p {
-    font-size: 2rem;
-    //font-weight: bold;
+  address {
+    font-size: 1.5rem;
   }
 }
 
@@ -133,102 +40,64 @@ nav {
   padding: 20px 0;
   color: white;
 }
-
-.icon-delivery, .icon-mounting, .icon-payment, .icon-guarantee, .icon-insurance {
-  height: 135px;
-  padding-top: 135px;
-  width: 150px;
-  margin-bottom: 100px;
-}
-
-.icon-delivery {
-  @include icon-background("../img/promo.png", 0);
-}
-
-.icon-mounting {
-  @include icon-background("../img/promo.png", -135px);
-}
-
-.icon-payment {
-  @include icon-background("../img/promo.png", -270px);
-}
-
-.icon-guarantee {
-  @include icon-background("../img/promo.png", -410px);
-}
-
-.icon-insurance {
-  @include icon-background("../img/promo.png", -542px);
-}
-
-.icon-broshirovanie, .icon-remont, .icon-shlifovka, .icon-laminat, .icon-parket, .icon-lakirovka {
-  width: 300px;
-  height: 200px;
-  padding-top: 200px;
-  margin-bottom: 20px;
-  @include border-radius(20px)
-}
-
-.icon-broshirovanie {
-  @include icon-background("../img/service.png", 0);
-}
-
-.icon-parket {
-  @include icon-background("../img/service.png", -1000px);
-}
-
-.icon-remont {
-  @include icon-background("../img/service.png", -400px);
-}
-
-.icon-shlifovka {
-  @include icon-background("../img/service.png", -600px);
-}
-
-.icon-laminat {
-  @include icon-background("../img/service.png", -800px);
-}
-
-.icon-lakirovka {
-  @include icon-background("../img/service.png", -200px);
-}
-
-#ciclevka {
-  p {
-    text-align: left;
-  }
-  span {
-    font-weight: bold;
-  }
-}
-
 .definition {
-  color: cornflowerblue;
+  color: #6495ed;
   font-weight: bold;
+}
+
+.navbar-wrapper {
+  background-color: whitesmoke;
+  font-family: 'Open Sans';
+  nav {
+    background-color: whitesmoke;
+  }
+  .nav {
+    a {
+      color: #000;
+      text-decoration: underline;
+    }
+  }
+}
+.logo {
+  margin: 0;
+  a {
+    color: black;
+  }
+}
+
+.intro {
+  background: url("../img/intro.jpg") no-repeat 50% 60%;
+  @include background-size(cover);
+  padding: 20rem 0;
+  margin-bottom: 50px;
+  margin-top: 51px;
+  font-family: 'PT Sans';
+  button {
+    color: white;
+    opacity: 1;
+    background: transparent;
+    border-color: #00688C;
+    &:hover, &:focus {
+      color: white;
+      background: #0CF;
+    }
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    line-height: 4rem;
+  }
 }
 
 #ciclevka-price {
   color: black;
   table {
     text-align: left;
+    //font-size: 1.75rem;
   }
 }
 
-#reviews {
-  img {
-    //height: 150px;
-    width: 150px;
-    float: left;
-    //display: block;
-    //@include border-radius(20px);
-  }
-  span {
-    text-align: left;
-  }
-  p {
-    text-align: left;
-  }
-}
 
 .modal-form {
   text-align: left;
@@ -244,9 +113,11 @@ nav {
     color: #F96;
     display: block;
     font-size: 30px;
-    font-weight: 400;
+    font-family: 'Open Sans';
+
   }
   .modal-body {
+    font-family: 'Open Sans';
     * {
       margin: 0;
       padding: 0;
@@ -363,4 +234,22 @@ nav {
 }
 #consultation {
   margin-top: 0px;
+}
+@media (max-width: 768px) {
+    .container, #service {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  section.container, footer.container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .intro {
+    padding: 0;
+  }
+  nav {
+    li {
+      padding: 0 15px;
+    }
+  }
 }
