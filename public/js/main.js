@@ -10,7 +10,9 @@
                 comment: a[3]
             },
             success: function (){
-                yaCounter14419213.reachGoal('sendEmailSite');
+                window.onload = function(){
+                    yaCounter14419213.reachGoal('sendEmailSite');
+                };
                 $('.contact-container').prepend('<div class="alert alert-success" role="alert"><strong>Ваша заявка отправлена!</strong></div>');
                 $('.contact').css('display', 'none');
                 setTimeout(function(){
