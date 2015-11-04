@@ -98,6 +98,15 @@ footer {
   }
 }
 
+.table-striped {
+  tbody {
+    tr {
+      &:nth-of-type(odd) {
+        background-color: rgba(249,249,249,0.25);
+      }
+    }
+  }
+}
 
 .modal-form {
   text-align: left;
@@ -248,7 +257,7 @@ footer {
     padding: 0;
   }
   nav {
-    li {
+    li, .navbar-right {
       padding: 0 15px;
     }
   }

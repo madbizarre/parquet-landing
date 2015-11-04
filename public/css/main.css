@@ -72,6 +72,9 @@ footer {
   #ciclevka-price table {
     text-align: left; }
 
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(249, 249, 249, 0.25); }
+
 .modal-form {
   text-align: left; }
 
@@ -183,7 +186,7 @@ footer {
   .intro {
     padding: 0; }
 
-  nav li {
+  nav li, nav .navbar-right {
     padding: 0 15px; } }
 
-/*# sourceMappingURL=main2.css.map */
+/*# sourceMappingURL=main.css.map */
