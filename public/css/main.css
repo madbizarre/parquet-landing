@@ -44,6 +44,9 @@ footer {
   .logo a {
     color: black; }
 
+.navbar-list-contact {
+  padding-top: 8px; }
+
 .intro {
   background: url("../img/intro.jpg") no-repeat 50% 60%;
   -webkit-background-size: cover;

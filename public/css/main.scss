@@ -65,6 +65,10 @@ footer {
   }
 }
 
+.navbar-list-contact {
+  padding-top: 8px;
+}
+
 .intro {
   background: url("../img/intro.jpg") no-repeat 50% 60%;
   @include background-size(cover);
