@@ -13,9 +13,6 @@
                 yaCounter33309968.reachGoal('sendEmailSite');
                 $('.contact-container').prepend('<div class="alert alert-success" role="alert"><strong>Ваша заявка отправлена!</strong></div>');
                 $('.contact').css('display', 'none');
-                setTimeout(function(){
-                    $('#contactUsModal').modal('hide');
-                }, 1000);
             },
             error: function (){
                 $('.contact h4').after('<div class="alert alert-danger" role="alert"><strong>Произошла ошибка!</strong> Попробуйте повторить отправку или повторите позже.</div>');
